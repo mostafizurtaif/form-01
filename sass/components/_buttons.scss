@@ -1,0 +1,17 @@
+.btn {
+  outline: none;
+  border: none;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}

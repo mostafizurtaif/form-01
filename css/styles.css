@@ -1,0 +1,192 @@
+.center-text {
+  text-align: center !important;
+}
+
+.margin-top-medium {
+  margin-top: 3rem !important;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+.btn--primary {
+  background-color: #dc143c;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn--primary:hover {
+  background-color: #800000;
+}
+
+.input {
+  outline: none;
+  border: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/bg.jpg");
+  background-size: cover;
+  backdrop-filter: blur(0.8rem);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.form-container-wrapper {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.form-container {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../img/form-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  max-width: 80rem;
+  height: 45rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 0 auto;
+}
+@media all and (max-width: 34.3125em) {
+  .form-container {
+    max-width: 30rem;
+  }
+}
+.form-container__inner {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  width: 40%;
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+@media all and (max-width: 43.125em) {
+  .form-container__inner {
+    width: 45%;
+  }
+}
+@media all and (max-width: 40em) {
+  .form-container__inner {
+    width: 47%;
+  }
+}
+@media all and (max-width: 37.5em) {
+  .form-container__inner {
+    width: 50%;
+  }
+}
+@media all and (max-width: 34.3125em) {
+  .form-container__inner {
+    width: 100%;
+  }
+}
+.form-container__inner-content {
+  width: 100%;
+}
+.form-container__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.form-container__login {
+  color: #800000;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+.form-container__login:hover {
+  color: #1a0000;
+}
+
+.form__text, .form__submit {
+  width: 100%;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.form__input-container {
+  width: 80%;
+  margin: 0 auto 1.3rem;
+  position: relative;
+}
+.form__text {
+  width: 100%;
+  padding: 1rem;
+  color: #3c3c3c;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #d5d5d5;
+}
+.form__text--pseudo-placeholder-stay-put + .form__pseudo-placeholder {
+  z-index: 1;
+  transform: translateY(-0.6rem);
+  font-size: 1rem;
+  color: #800000;
+}
+.form__text--pseudo-placeholder-stay-put {
+  padding: 2.1rem 1rem 1rem;
+}
+.form__text::placeholder, .form__pseudo-placeholder {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #a2a2a2;
+}
+.form__text::placeholder {
+  transition: color 0s 0.4s;
+}
+.form__pseudo-placeholder {
+  position: absolute;
+  left: 1.1rem;
+  top: 1.1rem;
+  z-index: -1;
+  transition: all 0.4s, z-index 0s 0.4s;
+}
+.form__text:focus + .form__pseudo-placeholder {
+  transition: all 0.4s, z-index 0s;
+  z-index: 1;
+  transform: translateY(-0.6rem);
+  font-size: 1rem;
+  color: #800000;
+}
+.form__text:focus {
+  padding: 2.1rem 1rem 1rem;
+}
+.form__text:focus::placeholder {
+  transition: color 0s;
+  color: transparent;
+}
+.form__submit {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */
